@@ -7,7 +7,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Fondamento } from "next/font/google";
-import Link from "next/link";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import data from "./data";
@@ -16,16 +15,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-cards";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
 
 const FondamenTo = Fondamento({
   subsets: ["latin"],
@@ -46,9 +35,6 @@ const Projects = () => {
     sliderRef?.current?.swiper?.slideNext();
   }, []);
 
-  const handleClick = (href: any) => {
-    alert(href);
-  };
   return (
     <div id="projects" className="[&>*]:mx-4">
       <div className="flex justify-between my-4">
