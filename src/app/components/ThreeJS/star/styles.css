@@ -1,0 +1,30 @@
+@import url("https://rsms.me/inter/inter.css");
+
+.stars {
+  width: 100ww;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  background: #12071f;
+  color: #ddd;
+}
+
+.star-text {
+  background: linear-gradient(30deg, #c850c0, #ffcc70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* a {
+  pointer-events: all;
+  color: #ddd;
+  text-decoration: none;
+}
+
+svg {
+  fill: #ddd;
+} */
+
+
