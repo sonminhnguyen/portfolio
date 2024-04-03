@@ -1,3 +1,5 @@
+/* eslint-disable */
+"use client";
 import * as THREE from 'three'
 import { useMemo, useContext, createContext, useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
@@ -40,8 +42,8 @@ export function Instances({ children, ...props }) {
   return (
     <Merged castShadow receiveShadow meshes={instances} {...props}>
       {(instances) => <context.Provider value={instances} 
-      />}
-      {children} 
+      children={children} 
+    />}
     </Merged>
   )
 }
@@ -139,10 +141,10 @@ export function Computers(props) {
       <mesh castShadow receiveShadow geometry={n.Object_162.geometry} material={m.Texture} position={[4.05, 0, -2.96]} rotation={[-Math.PI, 0, 0]} scale={-1} />
       <mesh castShadow receiveShadow geometry={n.Object_166.geometry} material={m.Texture} position={[3.29, 0, -3.1]} rotation={[-Math.PI, 0, 0]} scale={-1} />
       <instances.Object32 position={[3.77, 1.84, -2.98]} rotation={[-Math.PI, 0, 0]} scale={-1} />
+      <instances.Object32 position={[3.77, 3.98, -2.98]} rotation={[-Math.PI, 0, 0]} scale={-1} />
       <mesh castShadow receiveShadow geometry={n.Object_182.geometry} material={m.Texture} position={[5.53, 2.14, -0.85]} rotation={[-Math.PI, 0, 0]} scale={-1} />
       <mesh castShadow receiveShadow geometry={n.Object_186.geometry} material={m.Texture} position={[4.05, 2.14, -2.96]} rotation={[-Math.PI, 0, 0]} scale={-1} />
       <mesh castShadow receiveShadow geometry={n.Object_190.geometry} material={m.Texture} position={[3.3, 2.14, -3.31]} rotation={[-Math.PI, 0, 0]} scale={-1} />
-      <instances.Object32 position={[3.77, 3.98, -2.98]} rotation={[-Math.PI, 0, 0]} scale={-1} />
       <instances.Object36 position={[0.35, 2.35, -3.34]} rotation={[-0.26, 0, 0]} />
       <instances.Object36 position={[0.18, 2.8, -2.85]} rotation={[0.09, 0.15, -0.005]} />
       <instances.Object36 position={[1.89, 0, -1.94]} rotation={[0, -0.44, 0]} scale={[1.5, 1, 1.5]} />

@@ -1,12 +1,10 @@
-// @refresh reset
-import React, { useEffect, useRef } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+"use client";
+import React from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import {
   useGLTF,
   MeshReflectorMaterial,
   BakeShadows,
-  Html,
-  PerspectiveCamera
 } from "@react-three/drei";
 import {
   EffectComposer,
@@ -16,7 +14,6 @@ import {
 import { easing } from "maath";
 import { suspend } from "suspend-react";
 import { Instances, Computers } from "./Computers";
-import { Color, Vector3 } from 'three'
 
 const suzi = import("@pmndrs/assets/models/bunny.glb");
 
@@ -104,7 +101,6 @@ const ComputerFrame = () => {
 
 function Bun(props) {
   const { nodes } = useGLTF(suspend(suzi).default);
-  // console.log(nodes);
   return (
     <mesh receiveShadow castShadow geometry={nodes.mesh.geometry} {...props}>
       <meshStandardMaterial color="#222" roughness={0.5} />
