@@ -44,13 +44,13 @@ const data : Project[] = [
     description: "App for noting",
     href: "https://nminhson.up.railway.app/apps/noteApp/",
   },
-  {
-    id: 5,
-    image: chatapp,
-    name: "CHAT APP",
-    description: "App for chating",
-    href: "https://nminhson.up.railway.app/apps/chatApp",
-  },
+  // {
+  //   id: 5,
+  //   image: chatapp,
+  //   name: "CHAT APP",
+  //   description: "App for chating",
+  //   href: "https://nminhson.up.railway.app/apps/chatApp",
+  // },
 ];
 
 export default data;

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Fondamento } from "next/font/google";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import data from "./data";
+import config from "./config";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -60,7 +60,7 @@ const Projects = () => {
             },
           }}
         >
-          {data.map((element) => (
+          {config.map((element) => (
             <SwiperSlide key={element.id} className="mr-0">
               <a
                 href={element?.href}
